@@ -1,0 +1,85 @@
+<h1>Valid benchmark URIs</h1>
+<a href="/json">/json</a><br />
+<a href="/db">/db</a><br />
+<a href="/queries">/queries</a> (?queries=(1|500))<br />
+<a href="/fortunes">/fortunes</a><br />
+<a href="/updates">/updates</a> (?queries=(1|500))<br />
+<a href="/plaintext">/plaintext</a><br />
+
+<!--
+
+/json
+Framework, 8, 16, 32, 64, 128, 256, Best, Lng, Plt, FE, IA, Errors
+
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, FPM, apache2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, FPM, nginx, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, HHVM, apache2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, HHVM, nginx, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, FPM, apache2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, FPM, nginx, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, HHVM, apache2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, HHVM, nginx, Rea, 0
+
+/db
+Framework, 8, 16, 32, 64, 128, 256, Best, Lng, Plt, FE, DB, Orm, IA, Errors
+
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, RedBean, Rea,  0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, RedBean, Rea, 0
+
+/queries
+Framework, 1, 5, 10, 15, 20, Best, Lng, Plt, FE, DB, Orm, IA, Errors
+
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, RedBean, Rea,  0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, RedBean, Rea, 0
+
+/fortunes
+Framework, 8, 16, 32, 64, 128, 256, Best, Lng, Plt, FE, DB, Orm, IA, Errors
+
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, RedBean, Rea,  0
+Flight-RedBean-Twig, x, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, RedBean, Rea, 0
+
+/updates
+Framework, 1, 5, 10, 15, 20, Best, Lng, Plt, FE, DB, Orm, IA, Errors
+
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, Doctrine2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, Doctrine2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, FPM, apache2, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, FPM, nginx, MariaDB, RedBean, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, HHVM, apache2, MariaDB, RedBean, Rea,  0
+Flight-RedBean-Twig, x, x, x, x, x, x, PHP, HHVM, nginx, MariaDB, RedBean, Rea, 0
+
+/plaintext
+Framework, 256, 1024, 4096, 16384, Best, Lng, Plt, FE, IA, Errors
+
+Flight-Doctrine2-Twig, x, x, x, x, x, PHP, FPM, apache2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, PHP, FPM, nginx, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, PHP, HHVM, apache2, Rea, 0
+Flight-Doctrine2-Twig, x, x, x, x, x, PHP, HHVM, nginx, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, PHP, FPM, apache2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, PHP, FPM, nginx, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, PHP, HHVM, apache2, Rea, 0
+Flight-RedBean-Twig, x, x, x, x, x, PHP, HHVM, nginx, Rea, 0
+
+All ran on Linux Debian 7 Wheezy
+
+-->
