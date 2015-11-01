@@ -2,14 +2,14 @@
 
 require_once 'vendor/autoload.php';
 
-R::setup('mysql:host=localhost;dbname=benchmark', 'root', 'al156IQ', true);
+R::setup('mysql:host=localhost;dbname=benchmark', 'root', '', true);
 
 $config = Doctrine\ORM\Tools\Setup::createYAMLMetadataConfiguration([__DIR__ . '/app/doctrine/config/yaml'], true);
 
 $dbParams = [
   'driver'   => 'pdo_mysql',
   'user'     => 'root',
-  'password' => 'al156IQ',
+  'password' => '',
   'dbname'   => 'benchmark',
   'charset'  => 'UTF8'
 ];
